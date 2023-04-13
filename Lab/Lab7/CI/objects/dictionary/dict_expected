@@ -1,0 +1,84 @@
+Attempting to create a dictionary... 
+Success: tree=1c882d0
+Attempting to insert 20 key/value pairs... Success.
+Attempting to print all values based on pre-existing keys:
+{
+	hungry: 281
+	unit: 446
+	materialistic: 915
+	jam: 817
+	preserve: 615
+	proud: 847
+	playground: 873
+	reduce: 85
+	fearless: 740
+	lettuce: 300
+	skirt: 526
+	toothpaste: 230
+	trade: 195
+	tap: 393
+	rock: 195
+	strengthen: 495
+	fire: 461
+	cushion: 931
+	ugly: 901
+	extra-large: 412
+}
+Complete.
+Retrieving key list from dictionary... Complete.
+Printing all key-value pairs based on the dict_key_list output:
+{
+	cushion: 931
+	extra-large: 412
+	fearless: 740
+	fire: 461
+	hungry: 281
+	jam: 817
+	lettuce: 300
+	materialistic: 915
+	playground: 873
+	preserve: 615
+	proud: 847
+	reduce: 85
+	rock: 195
+	skirt: 526
+	strengthen: 495
+	tap: 393
+	toothpaste: 230
+	trade: 195
+	ugly: 901
+	unit: 446
+}
+Complete.
+Do the values in the dictionary match the values originally added? Yes.
+Replacing all key/value pairs with new values... Success.
+Do the values in the dictionary match the replaced values? Success.
+Destroying old key list... Success.
+Retrieving key list from dictionary... Complete.
+Printing all updated key-value pairs based on the dict_key_list output:
+{
+	cushion: 931
+	extra-large: 412
+	fearless: 13
+	fire: 461
+	hungry: 281
+	jam: 817
+	lettuce: 300
+	materialistic: 11
+	playground: 873
+	preserve: 12
+	proud: 847
+	reduce: 85
+	rock: 15
+	skirt: 526
+	strengthen: 16
+	tap: 393
+	toothpaste: 14
+	trade: 195
+	ugly: 17
+	unit: 446
+}
+Complete.
+Does the dictionary contain a value for "playground"? Yes. Correct.
+Does the dictionary contain a value for "munchkin"? No. Correct.
+Test complete.
