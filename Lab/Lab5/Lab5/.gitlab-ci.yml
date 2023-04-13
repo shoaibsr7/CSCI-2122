@@ -1,0 +1,46 @@
+# Robert Smith -- Check Lab 5 Code Ouputs
+
+stages:
+    - setup
+    - build
+    - test
+
+check-file-structure:
+    stage: setup
+    tags:
+        - ugrad
+    script:
+        - CI/check-num-files.sh
+        - test -d Lab5
+        - test -d Lab5/array_list
+        - test -d Lab5/linked_list
+        - test -f Lab5/array_list/array_list.c
+        - test -f Lab5/array_list/array_list.h
+        - test -f Lab5/array_list/Makefile
+        - test -f Lab5/linked_list/linked_list.c
+        - test -f Lab5/linked_list/linked_list.h
+        - test -f Lab5/linked_list/Makefile
+
+run-arraylist:
+    stage: test
+    tags:
+        - ugrad
+    script:
+        - cp CI/objects/array_list/arrayM.o Lab5/array_list/
+        - cd Lab5/array_list/
+        - make
+        - test -f array_list.o
+        - test -f array_list
+        - ./array_list
+
+run-linkedlist:
+    stage: test
+    tags:
+        - ugrad
+    script:
+        - cp CI/objects/linked_list/linkedM.o Lab5/linked_list/
+        - cd Lab5/linked_list/
+        - make
+        - test -f linked_list.o
+        - test -f linked_list
+        - ./linked_list
