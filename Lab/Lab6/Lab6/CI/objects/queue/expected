@@ -1,0 +1,19 @@
+Creating a queue... Success.
+Queue Size = 0
+Adding 9 items to the queue... Success.
+Queue Size = 9
+Does the queue contain "I'm"? Yes. Success.
+Does the queue contain "gloop"? No. Success.
+Removing, checking, and printing each element...
+Successfully Dequeued: "This", Size = 8, Peek = "is"
+Successfully Dequeued: "is", Size = 7, Peek = "the"
+Successfully Dequeued: "the", Size = 6, Peek = "text"
+Successfully Dequeued: "text", Size = 5, Peek = "I'm"
+Successfully Dequeued: "I'm", Size = 4, Peek = "putting"
+Successfully Dequeued: "putting", Size = 3, Peek = "into"
+Successfully Dequeued: "into", Size = 2, Peek = "the"
+Successfully Dequeued: "the", Size = 1, Peek = "queue."
+Successfully Dequeued: "queue.", Size = 0, Peek = "(null)"
+Attempting a NULL pointer in contains, enqueue, and dequeue... Success.
+Attempting to destroy the queue... Success.
+Test complete.
