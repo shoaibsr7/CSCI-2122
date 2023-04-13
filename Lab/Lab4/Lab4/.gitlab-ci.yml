@@ -1,0 +1,50 @@
+# Robert Smith -- Check Lab 4 Code Ouputs
+
+stages:
+    - setup
+    - build
+    - test
+
+check-file-structure:
+    stage: setup
+    tags:
+        - ugrad
+    script:
+        - CI/check-num-files.sh
+        - test -d Lab4
+        - test -d Lab4/book
+        - test -d Lab4/calculator
+        - test -f Lab4/book/book.c
+        - test -f Lab4/book/book.h
+        - test -f Lab4/calculator/calculator.c
+        - test -f Lab4/calculator/calculator.h
+
+run-book:
+    stage: test
+    tags:
+        - ugrad
+    script:
+        - cp CI/objects/book/* Lab4/book/
+        - cd Lab4/book/
+        - gcc --std=c18 book.c bookM.o -o book
+        - test -f book
+        - ./book i_must_scream
+        - ./book shadow_over_innsmouth
+        - ../../CI/compare-book-files.sh
+
+run-calculator:
+    stage: test
+    tags:
+        - ugrad
+    script:
+        - cp CI/objects/calculator/* Lab4/calculator/
+        - cd Lab4/calculator/
+        - gcc --std=c18 calculator.c calculatorM1.o -o calc1
+        - gcc --std=c18 calculator.c calculatorM2.o -o calc2
+        - test -f calc1
+        - test -f calc2
+        - ./calc1 input1 > output1_1
+        - ./calc1 input2 > output1_2
+        - ./calc2 input1 > output2_1
+        - ./calc2 input2 > output2_2
+        - ../../CI/compare-calc-files.sh
