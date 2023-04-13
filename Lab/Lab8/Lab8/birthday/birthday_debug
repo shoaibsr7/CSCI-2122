@@ -1,0 +1,31 @@
+file ./happy_birthday_geralt
+
+break main
+run
+
+break invite_yennefer
+c
+set var desire = 21
+
+
+break invite_triss
+c
+
+break check_money
+c
+n
+n
+n
+set var c = 0
+set var d = 0
+
+break invite_vesemir
+c
+set var memory = malloc(1000)
+
+
+break invite_geralt
+c
+set var letter->invitation = 0
+c
+
