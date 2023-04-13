@@ -1,0 +1,12 @@
+Attempting to create a binary tree (providing compare and print functions)... 
+Success: top=0, itemSize=4, type=int, cmp=237347de, prt=237347fc
+Creating an array of the following values to add to the tree:
+	281, 446, 915, 817, 615, 847, 873, 85, 740, 300, 526, 230, 195, 393, 195, 495, 461, 931, 901, 412, 511, 573, 959, 477, 220, 64, 682, 376, 630, 266
+Attempting to insert those 30 values... Success.
+Print them in-order:      64 85 195 195 220 230 266 281 300 376 393 412 446 461 477 495 511 526 573 615 630 682 740 817 847 873 901 915 931 959 
+Print them pre-order:     281 85 64 230 195 195 220 266 446 300 393 376 412 915 817 615 526 495 461 477 511 573 740 682 630 847 873 901 931 959 
+Print them post-order:    64 220 195 195 266 230 85 376 412 393 300 477 461 511 495 573 526 630 682 740 615 901 873 847 817 959 931 915 446 281 
+Print them reverse-order: 959 931 915 901 873 847 817 740 682 630 615 573 526 511 495 477 461 446 412 393 376 300 281 266 230 220 195 195 85 64 
+Does the tree contain 495? Yes. Success.
+Does the tree contain 80? No. Success.
+Test Complete.
