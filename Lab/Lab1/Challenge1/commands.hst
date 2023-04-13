@@ -1,0 +1,29 @@
+   15  mkdir one
+   16  mkdir one/two
+   17  mkdir one/two/three
+   18  mkdir this
+   19  mkdir this/that
+   20  mkdir this/that/theother
+   21  mkdir us
+   21  mkdir us/them
+   16  echo "tell me not to tell me what's for dinner" > one/two/01never  
+   17  echo "these kids at the door" > us/02card
+   18  echo "every puppy you see, but not the flowers" > us/them/03spoil
+   19  echo "decisions make conscious efforts" > this/that/theother/04conscious
+   20  echo "take you out for a steak dinner" > this/05gonna
+   21  echo "all the way to town using only one leg and an expensive hat" > this/that/06bike
+   22  echo "people beatbox their way into my heart" > one/07kindhearted
+   23  echo "the difference between these two pictures" > one/two/three/08spot
+   24  echo "is the first day of your new life as a living thing" > one/two/three/09today
+   25  echo "the lions before you put your head in their mouth" > one/two/three/10tame
+   26  echo "me a hug and buy me dinner because you're making me hungry" > this/that/11give
+   27  echo "rings are expensive things and that's sad" > this/that/12expensive
+   28  echo "him out of the boat and save yourself" > us/them/13boot
+   29  echo "the garden, unless you're scared of flowers" > us/them/14water
+   30  echo "children really test the bounds of child abuse law" > this/15sulky
+   31  echo "should cook dinner for the one you love, especially if it's a puppy" > this/that/theother/16you
+   32  echo "picking flowers and sing me a song about not letting anything go, ever" > one/17start
+   33  echo "ity killed the cat, and that's sad" > one/two/three/18curious
+   34  echo "is boring, unless it's about puppies because puppies are awesome" > one/two/19history
+   35  echo "the creek without paddle will make me late for dinner" > us/them/20up
+   36  history >  commands.hst
