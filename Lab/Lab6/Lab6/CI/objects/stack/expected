@@ -1,0 +1,19 @@
+Creating a stack... Success.
+Stack Size = 0
+Adding 9 items to the stack... Success.
+Stack Size = 9
+Does the stack contain "I'm"? Yes. Success.
+Does the stack contain "gloop"? No. Success.
+Removing, checking, and printing each element...
+Successfully Popped: "stack.", Size = 8, Peek = "the"
+Successfully Popped: "the", Size = 7, Peek = "into"
+Successfully Popped: "into", Size = 6, Peek = "putting"
+Successfully Popped: "putting", Size = 5, Peek = "I'm"
+Successfully Popped: "I'm", Size = 4, Peek = "text"
+Successfully Popped: "text", Size = 3, Peek = "the"
+Successfully Popped: "the", Size = 2, Peek = "is"
+Successfully Popped: "is", Size = 1, Peek = "This"
+Successfully Popped: "This", Size = 0, Peek = "(null)"
+Attempting a NULL pointer in contains, push, and pop... Success.
+Attempting to destroy the stack... Success.
+Test complete.
